@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.background-image {
+    display: flex;
+    background-image: url('../assets/fondo.jpg');
+    background-size: cover;
+    background-position: 40%;
+    width: 100%;
+    height: 100vh;
+}
+
+.titulo-home{
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    font-family: roboto;
+    font-weight: bold;
+    font-size: 80px;
+    color: #fff;
+    .line-break{
+        display: block;
+    }
+}
+
+.parrafo{
+    position: absolute;
+    top: 65%;
+    left: 5%;
+    font-family: roboto;
+    font-weight: regular;
+    font-size: 30px;
+    color: #fff;
+    .line-break{
+        display: block;
+    }
+}
+
+.brush1{
+    position: absolute;
+    width: 55%;
+    top: 40%;
+}
+
+    .ahri{
+        display: flex;
+        position: absolute;
+        width: fit-content;
+        top: 25%;
+        left: 55%;
+    }
+
+    @media screen and (max-width: 650px) {
+        .titulo-home{
+            position: absolute;
+            top: 20%;
+            left: 5%;
+            font-family: roboto;
+            font-weight: bold;
+            font-size: 40px;
+            color: #fff;
+            .line-break{
+                display: none;
+            }
+        }
+        .brush1{
+            position: absolute;
+            width: 400px;
+            top: 28%;
+        }
+        .parrafo{
+            position: absolute;
+            top: 35%;
+            left: 5%;
+            font-family: roboto;
+            font-weight: regular;
+            font-size: 18px;
+            color: #fff;
+            .line-break{
+                display: none;
+            }
+        }
+        .ahri{
+            position: absolute;
+            top: 45%;
+            left: 0%;
+            height: 400px;
+        }
+        .mi-boton{
+            left: 35%;
+        }
+    }

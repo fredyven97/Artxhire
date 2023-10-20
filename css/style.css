@@ -1,0 +1,1069 @@
+@charset "UTF-8";
+/* Estilos para el header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000; /* Color de fondo del encabezado */
+  padding: 10px 20px;
+}
+
+/* Estilos para el ícono de menú (icono de tres líneas horizontales) */
+.menu-icon {
+  display: none; /* Ocultar el ícono de menú en pantallas grandes */
+  cursor: pointer;
+}
+
+.logo {
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: #fff; /* Color de las líneas del ícono */
+  margin: 3px 0;
+}
+
+/* Estilos para la navegación */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 50px; /* Espacio entre los elementos de la navegación */
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff; /* Color del texto de los enlaces */
+  position: relative;
+  font-family: roboto;
+  font-size: 20px;
+  font-weight: regular;
+}
+
+/* Estilo del subrayado en estado hover */
+nav a:hover {
+  text-decoration: none; /* Elimina el subrayado predeterminado en estado hover */
+}
+nav a:hover:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 8px; /* Grosor del subrayado en estado hover */
+  background: linear-gradient(to right, #1F507F, #3A84C1); /* Color del subrayado en estado hover */
+  left: 0;
+  bottom: -10px;
+  border-radius: 20px;
+}
+
+/* Estilos para pantallas pequeñas (media query) */
+@media screen and (max-width: 650px) {
+  .menu-icon {
+    display: block;
+    margin-left: 60%;
+    /* Muestra el ícono de menú en pantallas pequeñas */
+  }
+  nav ul {
+    display: none;
+    color: #fff; /* Oculta la navegación en pantallas pequeñas */
+  }
+  /* Agregar estilos de menú desplegable o similar para pantallas pequeñas */
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.background-image {
+  display: flex;
+  background-image: url("../assets/fondo.jpg");
+  background-size: cover;
+  background-position: 40%;
+  width: 100%;
+  height: 100vh;
+}
+
+.titulo-home {
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 80px;
+  color: #fff;
+}
+.titulo-home .line-break {
+  display: block;
+}
+
+.parrafo {
+  position: absolute;
+  top: 65%;
+  left: 5%;
+  font-family: roboto;
+  font-weight: regular;
+  font-size: 30px;
+  color: #fff;
+}
+.parrafo .line-break {
+  display: block;
+}
+
+.brush1 {
+  position: absolute;
+  width: 55%;
+  top: 40%;
+}
+
+.ahri {
+  display: flex;
+  position: absolute;
+  width: fit-content;
+  top: 25%;
+  left: 55%;
+}
+
+@media screen and (max-width: 650px) {
+  .titulo-home {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    font-family: roboto;
+    font-weight: bold;
+    font-size: 40px;
+    color: #fff;
+  }
+  .titulo-home .line-break {
+    display: none;
+  }
+  .brush1 {
+    position: absolute;
+    width: 400px;
+    top: 28%;
+  }
+  .parrafo {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    font-family: roboto;
+    font-weight: regular;
+    font-size: 18px;
+    color: #fff;
+  }
+  .parrafo .line-break {
+    display: none;
+  }
+  .ahri {
+    position: absolute;
+    top: 45%;
+    left: 0%;
+    height: 400px;
+  }
+  .mi-boton {
+    left: 35%;
+  }
+}
+@font-face {
+  font-family: Roboto;
+  src: url(../assets/fonts/Roboto-Bold.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: Roboto;
+  src: url(../assets/fonts/Roboto-Regular.ttf);
+  font-weight: regular;
+}
+@font-face {
+  font-family: Roboto;
+  src: url(../assets/fonts/Roboto-Medium.ttf);
+  font-weight: medium;
+}
+@font-face {
+  font-family: bebas neue;
+  src: url(../assets/fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+  font-weight: regular;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+}
+body .somos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+body .number {
+  position: absolute;
+  right: 53%;
+}
+body .logob {
+  position: absolute;
+  width: 300px;
+  left: 55%;
+  top: 20%;
+}
+body .text {
+  position: absolute;
+  color: #fff;
+  font-family: roboto;
+  font-weight: regular;
+  font-size: 25px;
+  left: 50%;
+  top: 60%;
+}
+body .text .line-break {
+  display: block;
+}
+body .mi-boton {
+  left: 5%;
+  top: 90%;
+  position: absolute;
+  background-color: #3AB1C1;
+  color: #fff;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+  font-family: roboto;
+  left: 50%;
+  top: 85%;
+}
+body .mi-boton:hover {
+  background-color: #2492A1;
+}
+
+@media screen and (max-width: 650px) {
+  body .image {
+    position: absolute;
+    width: 500px;
+    top: 400px;
+  }
+  body .number {
+    width: 50px;
+    right: 65%;
+    top: 500px;
+  }
+  body .logob {
+    width: 200px;
+    top: 15%;
+    left: 30%;
+  }
+  body .text {
+    font-size: 14px;
+    left: 38%;
+    top: 55%;
+  }
+  body .text .line-break {
+    display: none;
+  }
+  body .mi-boton {
+    left: 5%;
+    top: 90%;
+    position: absolute;
+    background-color: #3AB1C1;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    font-family: roboto;
+    left: 30%;
+    top: 70%;
+  }
+}
+body .sec2 h1 {
+  position: absolute;
+  color: #fff;
+  font: 100% roboto;
+  font-weight: bold;
+  font-size: 60px;
+  top: 40%;
+  left: 5%;
+}
+body .sec2 .grid-container {
+  display: flex;
+  cursor: pointer;
+}
+body .sec2 .grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 40px;
+}
+body .sec2 .grid2 {
+  position: absolute;
+  gap: 40px;
+  padding: 40px;
+  top: 63px;
+  left: 0px;
+}
+body .sec2 .Imagen-10:hover {
+  opacity: 70%;
+}
+body .sec2 .Imagen-11:hover {
+  opacity: 70%;
+}
+body .sec2 .Imagen-12:hover {
+  opacity: 70%;
+}
+body .sec2 .Imagen-13:hover {
+  opacity: 70%;
+}
+body .sec2 .Imagen-14:hover {
+  opacity: 70%;
+}
+body .sec2 .Imagen-15:hover {
+  opacity: 70%;
+}
+body .sec2 .Imagen-16:hover {
+  opacity: 70%;
+}
+body .sec2 .Imagen-17:hover {
+  opacity: 70%;
+}
+body .sec2 .Imagen-18:hover {
+  opacity: 70%;
+}
+body .sec2 .field-group {
+  width: 320px;
+  height: 40px;
+  position: relative;
+}
+body .sec2 .input-field {
+  width: 100%;
+  height: 100%;
+  outline: 0;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  padding: 10px;
+  padding-left: 60px;
+  font-size: 25px;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.15);
+  margin-left: 1150px;
+}
+body .sec2 .input-field::placeholder {
+  color: #ffffff;
+}
+body .sec2 .icon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  margin-left: 585px;
+  margin-top: -23px;
+}
+body .sec2 .input-field:focus {
+  color: #fff;
+  border-color: #fff;
+}
+body .sec2 .input-field ~ .icon {
+  color: #fff;
+}
+body .sec2 .mi-boton {
+  background-color: #3AB1C1;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+  font-family: roboto;
+  left: 5%;
+  top: 470px;
+}
+body .sec2 .mi-boton:hover {
+  background-color: #2492A1;
+}
+
+@media screen and (max-width: 650px) {
+  body .sec2 .grid {
+    position: absolute;
+    grid-template-columns: 1fr;
+  }
+  body .sec2 .grid2 {
+    top: 163px;
+  }
+  body .sec2 .input-field {
+    margin-left: 50px;
+    margin-top: 100px;
+  }
+  body .sec2 .icon {
+    margin-left: 35px;
+    margin-top: -22px;
+  }
+  body .sec2 .mi-boton {
+    top: 4900px;
+    left: 50%;
+  }
+}
+.works .brush {
+  margin-left: -200px;
+  margin-top: 100px;
+}
+.works .number3 {
+  position: absolute;
+  left: 3%;
+  top: 300px;
+}
+.works h1 {
+  position: absolute;
+  font-size: 100px;
+  color: #fff;
+  font-family: roboto;
+  font-weight: bold;
+  z-index: 1;
+  top: 280px;
+  left: 100px;
+  line-height: 90px;
+}
+.works .text {
+  position: absolute;
+  font-weight: regular;
+  font-size: 25px;
+  left: 100px;
+  top: 550px;
+  z-index: 1;
+}
+.works .escultura {
+  position: absolute;
+  right: 0%;
+  height: 110%;
+}
+.works .dest {
+  position: absolute;
+  bottom: -150px;
+  left: 50%;
+  color: #fff;
+  font-weight: regular;
+  font-size: 35px;
+  font: 100% roboto;
+  text-decoration: none;
+}
+.works .dest:hover {
+  font-weight: bold;
+  color: #3AB1C1;
+}
+.works .brush4 {
+  position: absolute;
+  width: 20%;
+  top: 112%;
+  left: 44%;
+}
+
+@media screen and (max-width: 650px) {
+  body .works .brush {
+    width: 110%;
+    margin-left: -60px;
+  }
+  body .works .escultura {
+    height: 50%;
+    top: 50%;
+  }
+  body .works h1 {
+    font-size: 50px;
+    line-height: 50px;
+    left: 10%;
+    top: 25%;
+  }
+  body .works .number3 {
+    width: 50%;
+    top: 25%;
+  }
+  body .works .text {
+    font-size: 15px;
+    left: 10%;
+    top: 40%;
+  }
+  body .works .dest {
+    left: 25%;
+    bottom: -10%;
+  }
+  body .works .brush4 {
+    width: 70%;
+    left: 0%;
+    top: 102%;
+    padding: 40px;
+  }
+}
+div .destacado1 {
+  position: absolute;
+  left: 5%;
+  top: 20%;
+}
+div .nombre1 {
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 25px;
+  color: #ffffff;
+  left: 8%;
+  position: absolute;
+  top: 60%;
+}
+div .herramienta1 {
+  font-family: roboto;
+  font-weight: regular;
+  font-size: 15px;
+  color: #808080;
+  left: 8%;
+  position: absolute;
+  top: 65%;
+}
+div .destacadosh2 {
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 30px;
+  color: #3c82c7;
+  left: 45%;
+  position: absolute;
+  top: 20%;
+}
+div .destacadosh3 {
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 30px;
+  color: #3c82c7;
+  left: 45%;
+  position: absolute;
+  color: #ffffff;
+  font-size: 20px;
+  top: 25%;
+}
+div .infoartista {
+  font-family: roboto;
+  font-weight: regular;
+  font-size: 15px;
+  color: #808080;
+  left: 8%;
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  font-size: 20px;
+}
+div .otrostrabajos {
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 30px;
+  color: #3c82c7;
+  left: 45%;
+  position: absolute;
+  color: #ffffff;
+  font-size: 20px;
+  left: 45%;
+  top: 45%;
+}
+div .trabajos {
+  position: absolute;
+  left: 45%;
+  top: 50%;
+}
+div .vermas {
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 30px;
+  color: #3c82c7;
+  left: 45%;
+  position: absolute;
+  color: #ffffff;
+  font-size: 20px;
+  left: 75%;
+  top: 45%;
+  cursor: pointer;
+}
+div .icon-flecha {
+  position: absolute;
+  left: 80%;
+  top: 45%;
+  cursor: pointer;
+}
+
+div .destacado2 {
+  position: absolute;
+  left: 5%;
+  top: 80%;
+}
+div .nombre2 {
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 25px;
+  color: #ffffff;
+  left: 8%;
+  position: absolute;
+  top: 120%;
+}
+div .herramienta2 {
+  font-family: roboto;
+  font-weight: regular;
+  font-size: 15px;
+  color: #808080;
+  left: 8%;
+  position: absolute;
+  top: 125%;
+}
+div .destacadosh2-2 {
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 30px;
+  color: #3c82c7;
+  left: 45%;
+  position: absolute;
+  top: 80%;
+}
+div .destacadosh3-2 {
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 30px;
+  color: #3c82c7;
+  left: 45%;
+  position: absolute;
+  color: #ffffff;
+  font-size: 20px;
+  top: 85%;
+}
+div .infoartista2 {
+  font-family: roboto;
+  font-weight: regular;
+  font-size: 15px;
+  color: #808080;
+  left: 8%;
+  position: absolute;
+  top: 90%;
+  left: 45%;
+  font-size: 20px;
+}
+div .otrostrabajos-2 {
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 30px;
+  color: #3c82c7;
+  left: 45%;
+  position: absolute;
+  color: #ffffff;
+  font-size: 20px;
+  left: 45%;
+  top: 105%;
+}
+div .trabajos2 {
+  position: absolute;
+  left: 45%;
+  top: 110%;
+}
+div .vermas-2 {
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 30px;
+  color: #3c82c7;
+  left: 45%;
+  position: absolute;
+  color: #ffffff;
+  font-size: 20px;
+  left: 75%;
+  top: 105%;
+  cursor: pointer;
+}
+div .icon-flecha2 {
+  position: absolute;
+  left: 80%;
+  top: 105%;
+  cursor: pointer;
+}
+
+div .destacado3 {
+  position: absolute;
+  left: 5%;
+  top: 140%;
+}
+div .nombre3 {
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 25px;
+  color: #ffffff;
+  left: 8%;
+  position: absolute;
+  top: 180%;
+}
+div .herramienta3 {
+  font-family: roboto;
+  font-weight: regular;
+  font-size: 15px;
+  color: #808080;
+  left: 8%;
+  position: absolute;
+  top: 185%;
+}
+div .destacadosh2-3 {
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 30px;
+  color: #3c82c7;
+  left: 45%;
+  position: absolute;
+  top: 140%;
+}
+div .destacadosh3-3 {
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 30px;
+  color: #3c82c7;
+  left: 45%;
+  position: absolute;
+  color: #ffffff;
+  font-size: 20px;
+  top: 145%;
+}
+div .infoartista3 {
+  font-family: roboto;
+  font-weight: regular;
+  font-size: 15px;
+  color: #808080;
+  left: 8%;
+  position: absolute;
+  top: 150%;
+  left: 45%;
+  font-size: 20px;
+}
+div .otrostrabajos-3 {
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 30px;
+  color: #3c82c7;
+  left: 45%;
+  position: absolute;
+  color: #ffffff;
+  font-size: 20px;
+  left: 45%;
+  top: 165%;
+}
+div .trabajos3 {
+  position: absolute;
+  left: 45%;
+  top: 170%;
+}
+div .vermas-3 {
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 30px;
+  color: #3c82c7;
+  left: 45%;
+  position: absolute;
+  color: #ffffff;
+  font-size: 20px;
+  left: 75%;
+  top: 165%;
+  cursor: pointer;
+}
+div .icon-flecha3 {
+  position: absolute;
+  left: 80%;
+  top: 165%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+  div .destacado1 {
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    width: 85%;
+  }
+  div .nombre1 {
+    font-family: roboto;
+    font-weight: bold;
+    font-size: 25px;
+    color: #ffffff;
+    left: 8%;
+    position: absolute;
+    top: 37%;
+    font-size: 20px;
+  }
+  div .herramienta1 {
+    font-family: roboto;
+    font-weight: regular;
+    font-size: 15px;
+    color: #808080;
+    left: 8%;
+    position: absolute;
+    top: 40%;
+    font-size: 12px;
+  }
+  div .destacadosh2 {
+    font-family: roboto;
+    font-weight: bold;
+    font-size: 30px;
+    color: #3c82c7;
+    left: 45%;
+    position: absolute;
+    top: 45%;
+    left: 5%;
+  }
+  div .destacadosh3 {
+    font-family: roboto;
+    font-weight: bold;
+    font-size: 30px;
+    color: #3c82c7;
+    left: 45%;
+    position: absolute;
+    color: #ffffff;
+    font-size: 20px;
+    top: 50%;
+    left: 5%;
+  }
+  div .infoartista {
+    font-family: roboto;
+    font-weight: regular;
+    font-size: 15px;
+    color: #808080;
+    left: 8%;
+    position: absolute;
+    top: 55%;
+    left: 5%;
+    font-size: 15px;
+  }
+  div .otrostrabajos {
+    font-family: roboto;
+    font-weight: bold;
+    font-size: 30px;
+    color: #3c82c7;
+    left: 45%;
+    position: absolute;
+    color: #ffffff;
+    font-size: 15px;
+    top: 70%;
+    left: 5%;
+  }
+  div .trabajos {
+    position: absolute;
+    left: 45%;
+    top: 75%;
+    width: 85%;
+    left: 5%;
+  }
+  div .vermas {
+    font-family: roboto;
+    font-weight: bold;
+    font-size: 30px;
+    color: #3c82c7;
+    left: 45%;
+    position: absolute;
+    color: #ffffff;
+    font-size: 15px;
+    left: 65%;
+    top: 70%;
+    cursor: pointer;
+  }
+  div .icon-flecha {
+    position: absolute;
+    left: 82%;
+    top: 69.5%;
+    cursor: pointer;
+  }
+  div .destacado2 {
+    position: absolute;
+    left: 5%;
+    top: 90%;
+    width: 85%;
+  }
+  div .nombre2 {
+    font-family: roboto;
+    font-weight: bold;
+    font-size: 25px;
+    color: #ffffff;
+    left: 8%;
+    position: absolute;
+    top: 102%;
+    font-size: 20px;
+  }
+  div .herramienta2 {
+    font-family: roboto;
+    font-weight: regular;
+    font-size: 15px;
+    color: #808080;
+    left: 8%;
+    position: absolute;
+    top: 105%;
+    font-size: 12px;
+  }
+  div .destacadosh2-2 {
+    font-family: roboto;
+    font-weight: bold;
+    font-size: 30px;
+    color: #3c82c7;
+    left: 45%;
+    position: absolute;
+    top: 112%;
+    left: 5%;
+  }
+  div .destacadosh3-2 {
+    font-family: roboto;
+    font-weight: bold;
+    font-size: 30px;
+    color: #3c82c7;
+    left: 45%;
+    position: absolute;
+    color: #ffffff;
+    font-size: 20px;
+    top: 117%;
+    left: 5%;
+  }
+  div .infoartista2 {
+    font-family: roboto;
+    font-weight: regular;
+    font-size: 15px;
+    color: #808080;
+    left: 8%;
+    position: absolute;
+    top: 122%;
+    left: 5%;
+    font-size: 15px;
+  }
+  div .otrostrabajos-2 {
+    font-family: roboto;
+    font-weight: bold;
+    font-size: 30px;
+    color: #3c82c7;
+    left: 45%;
+    position: absolute;
+    color: #ffffff;
+    font-size: 15px;
+    top: 137%;
+    left: 5%;
+  }
+  div .trabajos2 {
+    position: absolute;
+    left: 45%;
+    top: 142%;
+    width: 85%;
+    left: 5%;
+  }
+  div .vermas-2 {
+    font-family: roboto;
+    font-weight: bold;
+    font-size: 30px;
+    color: #3c82c7;
+    left: 45%;
+    position: absolute;
+    color: #ffffff;
+    font-size: 15px;
+    left: 65%;
+    top: 137%;
+    cursor: pointer;
+  }
+  div .icon-flecha2 {
+    position: absolute;
+    left: 82%;
+    top: 136.5%;
+    cursor: pointer;
+  }
+  div .destacado3 {
+    position: absolute;
+    left: 5%;
+    top: 160%;
+    width: 85%;
+  }
+  div .nombre3 {
+    font-family: roboto;
+    font-weight: bold;
+    font-size: 25px;
+    color: #ffffff;
+    left: 8%;
+    position: absolute;
+    top: 175%;
+    font-size: 20px;
+  }
+  div .herramienta3 {
+    font-family: roboto;
+    font-weight: regular;
+    font-size: 15px;
+    color: #808080;
+    left: 8%;
+    position: absolute;
+    top: 180%;
+    font-size: 12px;
+  }
+  div .destacadosh2-3 {
+    font-family: roboto;
+    font-weight: bold;
+    font-size: 30px;
+    color: #3c82c7;
+    left: 45%;
+    position: absolute;
+    top: 186%;
+    left: 5%;
+  }
+  div .destacadosh3-3 {
+    font-family: roboto;
+    font-weight: bold;
+    font-size: 30px;
+    color: #3c82c7;
+    left: 45%;
+    position: absolute;
+    color: #ffffff;
+    font-size: 20px;
+    top: 191%;
+    left: 5%;
+  }
+  div .infoartista3 {
+    font-family: roboto;
+    font-weight: regular;
+    font-size: 15px;
+    color: #808080;
+    left: 8%;
+    position: absolute;
+    top: 196%;
+    left: 5%;
+    font-size: 15px;
+  }
+  div .otrostrabajos-3 {
+    font-family: roboto;
+    font-weight: bold;
+    font-size: 30px;
+    color: #3c82c7;
+    left: 45%;
+    position: absolute;
+    color: #ffffff;
+    font-size: 15px;
+    top: 210%;
+    left: 5%;
+  }
+  div .trabajos3 {
+    position: absolute;
+    left: 45%;
+    top: 215%;
+    width: 85%;
+    left: 5%;
+  }
+  div .vermas-3 {
+    font-family: roboto;
+    font-weight: bold;
+    font-size: 30px;
+    color: #3c82c7;
+    left: 45%;
+    position: absolute;
+    color: #ffffff;
+    font-size: 15px;
+    left: 65%;
+    top: 210%;
+    cursor: pointer;
+  }
+  div .icon-flecha3 {
+    position: absolute;
+    left: 82%;
+    top: 209.5%;
+    cursor: pointer;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

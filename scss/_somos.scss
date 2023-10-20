@@ -1,0 +1,91 @@
+@mixin boton(){
+    left: 5%;
+    top: 90%;
+    position: absolute ;
+    background-color: #3AB1C1;
+    color: #fff; 
+    padding: 10px 30px; 
+    border: none; 
+    border-radius: 6px; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
+    font-size: 16px;
+    font-family: roboto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    .somos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .number{
+        position: absolute;
+        right: 53%;
+    }
+    .logob{
+        position: absolute;
+        width: 300px;
+        left: 55%;
+        top: 20%;
+    }
+    .text{
+        position: absolute;
+        color: #fff;
+        font-family: roboto;
+        font-weight: regular;
+        font-size: 25px;
+        left: 50%;
+        top: 60%;
+        .line-break{
+            display: block;
+        }
+    }
+    .mi-boton {
+        @include boton();
+        left: 50%;
+        top: 85%;
+    }
+    
+    .mi-boton:hover {
+        background-color: #2492A1;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    body{
+        .image{
+            position: absolute;
+            width: 500px;
+            top: 400px;
+        }
+        .number{
+            width: 50px;
+            right: 65%;
+            top: 500px;
+        }
+        .logob{
+            width: 200px;
+            top: 15%;
+            left: 30%;
+        }
+        .text{
+            font-size: 14px;
+            left: 38%;
+            top: 55%;
+            .line-break{
+                display: none;
+            }
+        }
+        .mi-boton {
+            @include boton();
+            left: 30%;
+            top: 70%;
+        }
+    }
+}
+
